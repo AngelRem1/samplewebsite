@@ -1,20 +1,32 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<body>
 <div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
+  <script src="app.component.ts"></script>
+  <!-- <link rel="stylesheet" href="app.component.css"> -->
+  <h1 class="title">
+    Input Numbers
   </h1>
-  <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+  <form class="form">
+    <input id= "UserInput1" [(ngModel)]="n1"  name="s"/>
+    <input id= "UserInput2" [(ngModel)]="n2"  name="d"/>
+    <input id= "UserInput3" [(ngModel)]="n3"  name="v"/>
+    <div class= "Button1">
+    <button class = "cool-button2"(click)="arrangenumbers()">Ascending</button>
+    </div>
+    <div class= "Button2">
+      <button class = "cool-button"(click)="descendingnumber()">Descending</button>
+    </div>
+  </form>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
-
+<h2>Here they are:</h2>
+<p id="p1">
+  {{ n1 }}
+</p>
+<p id="p2">
+  {{ n2 }}
+</p>
+<p id="p3">
+  {{ n3 }}
+</p>
+<p class= 'image'id ="p4"></p>
+</body>
